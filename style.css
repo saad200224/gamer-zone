@@ -382,6 +382,7 @@
   margin-top: 30px;
 }
 
+
 /* footer section ends here */
 
 /* responsive styles starts here */
@@ -413,6 +414,28 @@
 
   .banner-container {
     flex-direction: column-reverse;
+    padding: 0 120px;
+    width: 400px;
+  }
+
+  .banner-content{
+    margin-top: 25px;
+  }
+
+  /* online game */
+  .online-game-cards{
+    flex-direction: column;
+  }
+
+  .card{
+    margin-bottom: 80px;
+  }
+
+  /* play section */
+
+  .play-container{
+    flex-direction: column;
+    height: auto;
     padding: 0 120px;
   }
 
