@@ -245,6 +245,8 @@
 .play-content {
   width: 353px;
   text-align: right;
+  position: relative;
+  right: -120px;
 }
 
 .play-image{
