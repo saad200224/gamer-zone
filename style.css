@@ -43,6 +43,24 @@
   font-weight: 500;
 }
 
+.caption-bold {
+  color: #0b0223;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-text-bold {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .gradient-text-secondary {
   background: var(--secondary-gradient);
   color: transparent;
@@ -182,7 +200,7 @@
 
 /* online game section related style starts here*/
 
-.online-game{
+.online-game {
   padding: 0 240px;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -192,7 +210,7 @@
   text-align: center;
 }
 
-.online-game-heading .section-title{
+.online-game-heading .section-title {
   margin-bottom: 15px;
 }
 
@@ -203,14 +221,107 @@
   margin-top: 50px;
 }
 
-.card{
+.card {
   width: 342px;
   height: 400px;
 }
 
+/* online game section related style ends here*/
 
+/* play online section related styles starts here */
 
-/* online game section related style starts here*/
+/* .play-section {
+  width: 1920px;
+  padding: 0 240px;
+}
+
+.play-container {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-content {
+  width: 353px;
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+  left: 680px;
+  bottom: -250px;
+} */
+
+/* play online section related styles ends here */
+
+/* button section starts here */
+
+.button-container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 0 240px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* button section ends here */
+
+/* footer section stars here */
+
+.footer-section {
+  background-color: #0b0223;
+  padding: 120px 0;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 66px;
+  color: #FFF;
+}
+
+.footer-menu > ul{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  color: white;
+  margin-top: 66px;
+
+}
+
+.footer-terms{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 75px;
+}
+
+.footer-copy-right p{
+  text-align: center;
+}
+
+.footer-copy-right{
+  margin-top: 30px;
+}
+
+/* footer section ends here */
 
 /* responsive styles starts here */
 
