@@ -25,12 +25,41 @@
   /* margin-top: 40px; */
 }
 
-.gradient-text {
+.section-desc {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.caption {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.gradient-text-secondary {
   background: var(--secondary-gradient);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-sub {
+  background: var(--primary-gradient);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
 /* nav related styles start here */
@@ -102,6 +131,7 @@
   align-items: center;
   padding: 0 240px;
   background-image: url(images/Group\ 14.png);
+  background-repeat: no-repeat;
 }
 .banner-heading-text {
   color: #0b0223;
@@ -121,14 +151,14 @@
   margin-bottom: 25px;
 }
 
-.list{
+.list {
   display: flex;
   align-items: center;
 }
-.list-items li{
+.list-items li {
   margin-bottom: 15px;
 }
-.fa-icon i{
+.fa-icon i {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,19 +166,51 @@
   margin-bottom: 15px;
 }
 
-.btn-container{
+.btn-container {
   margin-top: 40px;
 }
 
-.btn-sign{
-  background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+.btn-sign {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
 
-.btn-go{
-  background: #4EC5F7;
+.btn-go {
+  background: #4ec5f7;
 }
 
 /* main banner section related style ends here */
+
+/* online game section related style starts here*/
+
+.online-game{
+  padding: 0 240px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.online-game-heading {
+  text-align: center;
+}
+
+.online-game-heading .section-title{
+  margin-bottom: 15px;
+}
+
+.online-game-cards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.card{
+  width: 342px;
+  height: 400px;
+}
+
+
+
+/* online game section related style starts here*/
 
 /* responsive styles starts here */
 
@@ -170,6 +232,14 @@
 
   .follow-btn {
     margin-top: 60px;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    padding: 0 120px;
+  }
+  .banner-image {
+    width: 50%;
   }
 }
 
