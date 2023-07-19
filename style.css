@@ -1,9 +1,111 @@
 /* common and shared codes */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border-style: none;
+  font-family: "Work Sans", sans-serif;
 }
 
+:root {
+  --primary-gradient: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --secondary-gradient: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+
+.gradient-text {
+  background: var(--secondary-gradient);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav related styles start here */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 240px;
+  max-width: 1920px;
+  height: 130px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 86px;
+  height: 40px;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3c354f;
+}
+
+.follow-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+  width: 260px;
+  height: 56px;
+  /* padding: 20px 24px; */
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+
+.follow-btn .follow-btn-youtube,
+.follow-btn-tiktok {
+  background-color: transparent;
+}
+
+/* responsive styles starts here */
+
+/* for mobile */
+
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    height: auto;
+    padding: 0 120px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .follow-btn {
+    margin-top: 60px;
+  }
+}
+
+/* for tablet */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+}
