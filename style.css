@@ -255,7 +255,6 @@
 }
 
 .card-overlay-icon{
-  /* background-color: #FFF; */
   color: #FFF;
   margin-bottom: 16px;
 }
@@ -323,13 +322,17 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .button:hover {
   transform: scale(1.2);
   border: 1.5px solid #ff42a5;
   border-radius: 50px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* button section ends here */
@@ -386,6 +389,9 @@
 /* for mobile */
 
 @media screen and (max-width: 576px) {
+
+  /* nav bar */
+
   .nav-bar {
     flex-direction: column;
     margin-top: 100px;
@@ -403,13 +409,21 @@
     margin-top: 60px;
   }
 
+  /* main banner */
+
   .banner-container {
     flex-direction: column-reverse;
     padding: 0 120px;
   }
-  .banner-image {
-    width: 50%;
+
+  /* buttons */
+
+  .button-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
+
+
 }
 
 /* for tablet */
